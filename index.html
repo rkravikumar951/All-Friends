@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Neureal Friends</title>
+    <title>My Neurealm Friends</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
@@ -74,6 +74,21 @@
         }
     </style>
 </head>
+
+<script>
+    const counterNamespace = "ravikumar-neureal-friends";
+    const counterKey = "page-visits";
+
+    fetch(`https://api.countapi.xyz/hit/${counterNamespace}/${counterKey}`)
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById("visitorCount").innerText = data.value;
+        })
+        .catch(() => {
+            document.getElementById("visitorCount").innerText = "N/A";
+        });
+</script>
+
 <body>
 
 <div class="container">
@@ -84,36 +99,100 @@
     <table>
         <thead>
             <tr>
-                <th>Serial No</th>
+                <th>No</th>
                 <th>Name</th>
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>1</td>
-                <td>Add Name</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Add Name</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>Add Name</td>
-            </tr>
-            <tr>
-                <td>4</td>
-                <td>Add Name</td>
-            </tr>
-        </tbody>
+    <tr><td>1</td><td>Aathavan M S</td></tr>
+    <tr><td>2</td><td>Ajit Kumar Sa</td></tr>
+    <tr><td>3</td><td>Ajith Selvam</td></tr>
+    <tr><td>4</td><td>Amalraj Irudayamani</td></tr>
+    <tr><td>5</td><td>Aribaskar M</td></tr>
+    <tr><td>6</td><td>Arivuchelvam Palanivel</td></tr>
+    <tr><td>7</td><td>Arun S</td></tr>
+    <tr><td>8</td><td>Azhaguvel Ayyanar</td></tr>
+    <tr><td>9</td><td>B Hemnaath</td></tr>
+    <tr><td>10</td><td>Balaji Nathan</td></tr>
+    <tr><td>11</td><td>Basheer Ahamed F</td></tr>
+    <tr><td>12</td><td>Devadharshini Kalaivanan</td></tr>
+    <tr><td>13</td><td>Dhanapriya Deenathayalan</td></tr>
+    <tr><td>14</td><td>Dhanasekar .</td></tr>
+    <tr><td>15</td><td>Dhinesh Arulnambi</td></tr>
+    <tr><td>16</td><td>Dinakaran T</td></tr>
+    <tr><td>17</td><td>Dora Angel M</td></tr>
+    <tr><td>18</td><td>Durairaj Sugumaran</td></tr>
+    <tr><td>19</td><td>Ezhilarasan Karunanithi</td></tr>
+    <tr><td>20</td><td>Gokul G</td></tr>
+    <tr><td>21</td><td>Hari Krishnan Vastarala Jeevanandam</td></tr>
+    <tr><td>22</td><td>Irene Michelle</td></tr>
+    <tr><td>23</td><td>Jayasurya Subramani</td></tr>
+    <tr><td>24</td><td>Karthika H P</td></tr>
+    <tr><td>25</td><td>Kathiresan K</td></tr>
+    <tr><td>26</td><td>Lavanya Karunakaran</td></tr>
+    <tr><td>27</td><td>Lavanya S</td></tr>
+    <tr><td>28</td><td>Logesh Periyasamy</td></tr>
+    <tr><td>29</td><td>Mannat Sapra</td></tr>
+    <tr><td>30</td><td>Meena S</td></tr>
+    <tr><td>31</td><td>Mohan Ramasamy</td></tr>
+    <tr><td>32</td><td>Monisha Harikrishnan</td></tr>
+    <tr><td>33</td><td>Mounika B</td></tr>
+    <tr><td>34</td><td>Mounika S</td></tr>
+    <tr><td>35</td><td>Mridula Pandey</td></tr>
+    <tr><td>36</td><td>Muthukrishnan Olimuthu</td></tr>
+    <tr><td>37</td><td>Muthukumar Bala</td></tr>
+    <tr><td>38</td><td>Naveen Chakkaravarthy S S</td></tr>
+    <tr><td>39</td><td>Nipul Methyus Prabu Peter Inbaraj</td></tr>
+    <tr><td>40</td><td>Nirmalraj M</td></tr>
+    <tr><td>41</td><td>Parthiban L</td></tr>
+    <tr><td>42</td><td>Parthiban Olimalai</td></tr>
+    <tr><td>43</td><td>Pradeep Raj P</td></tr>
+    <tr><td>44</td><td>Pradeep Subramanian</td></tr>
+    <tr><td>45</td><td>Prakash Jayaveeramani</td></tr>
+    <tr><td>46</td><td>Prashanth Padmanaban</td></tr>
+    <tr><td>47</td><td>Ramamoorthy A</td></tr>
+    <tr><td>48</td><td>Ramya D</td></tr>
+    <tr><td>49</td><td>Rangasamy .</td></tr>
+    <tr><td>50</td><td>Ravi Kumar</td></tr>
+    <tr><td>51</td><td>Sabarirajan Manivannan</td></tr>
+    <tr><td>52</td><td>Sangeetha Raja</td></tr>
+    <tr><td>53</td><td>Sanjeevkumar R</td></tr>
+    <tr><td>54</td><td>Saranya</td></tr>
+    <tr><td>55</td><td>Selvaprabhu</td></tr>
+    <tr><td>56</td><td>Shaik Khaja Masthan</td></tr>
+    <tr><td>57</td><td>Shalin A</td></tr>
+    <tr><td>58</td><td>Shanthi A</td></tr>
+    <tr><td>59</td><td>Sherlin Kamal Raj R</td></tr>
+    <tr><td>60</td><td>Shivam Singh</td></tr>
+    <tr><td>61</td><td>Shivasubbiah Baranitharan</td></tr>
+    <tr><td>62</td><td>Shriram Jayaraj</td></tr>
+    <tr><td>63</td><td>Subash Chandrabose S</td></tr>
+    <tr><td>64</td><td>Sudharsan Sakthivel</td></tr>
+    <tr><td>65</td><td>Sundaramoorthy P</td></tr>
+    <tr><td>66</td><td>Suresh Dhanushkodi</td></tr>
+    <tr><td>67</td><td>Swarnaraja Muniyaswamy</td></tr>
+    <tr><td>68</td><td>Tejashwer. U</td></tr>
+    <tr><td>69</td><td>Thiyagu Nallusamy</td></tr>
+    <tr><td>70</td><td>V B R Sriram</td></tr>
+    <tr><td>71</td><td>Veerakumar Govindan</td></tr>
+    <tr><td>72</td><td>Vinit Manoj Wagh</td></tr>
+    <tr><td>73</td><td>Vinitha Dhanabal</td></tr>
+    <tr><td>74</td><td>Vinoth Kumar S</td></tr>
+    <tr><td>75</td><td>Vivian John</td></tr>
+</tbody>
     </table>
 
-    <footer>
-        <div><strong>Ravi Kumar</strong></div>
-        <div>Contact No: 9790795465</div>
-        <div>Email: Rkravikumar951@gmail.com</div>
-        <div class="datetime" id="datetime"></div>
-    </footer>
+   
+<footer>
+    <div><strong>Ravi Kumar</strong></div>
+    <div>Contact No: 9790795465</div>
+    <div>Email: Rkravikumar951@gmail.com</div>
+    <div class="datetime" id="datetime"></div>
+    <div class="visitor-count">
+        Visitors: <span id="visitorCount">Loading...</span>
+    </div>
+</footer>
+
 </div>
 
 <script>
